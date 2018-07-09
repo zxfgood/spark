@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+    <script type="text/javascript">
+        Ext.onReady(function() {
+            var item=[{
+                xtype:'toolbar',
+                width:400,
+                items: [
+                    {
+                        tooltip:'按钮1',
+                        text: '按钮',
+                        handler:function () {
+                            alert("点击了")
+                        }
+                    }, '-',{
+                        tooltip:'按钮2',
+                        text: '按钮'
+                    },
+                    {
+                        xtype: 'splitbutton',
+                        text : '分割按钮'
+                    },
+                    '->',
+                    {
+                        xtype    : 'textfield',
+                        name     : 'field1',
+                        emptyText: '输入搜索词'
+                    }
+                ]
+            }]
+            Ext.create('Ext.panel.Panel',{
+                renderTo: Ext.getBody(),
+                width: 500,
+                height : 500,
+                border : true,
+                frame : true,
+                items:item
+            })
+            /*Ext.create('Ext.toolbar.Toolbar', {
+                renderTo: document.body,
+                width   : 400,
+                items: [
+                    {
+                        tooltip:'按钮1',
+                        text: '按钮',
+                        handler:function () {
+                            alert("点击了")
+                        }
+                    }, '-',{
+                        tooltip:'按钮2',
+                        text: '按钮'
+                    },
+                    {
+                        xtype: 'splitbutton',
+                        text : '分割按钮'
+                    },
+                    '->',
+                    {
+                        xtype    : 'textfield',
+                        name     : 'field1',
+                        emptyText: '输入搜索词'
+                    }
+                ]
+            });*/
+        });
+    </script>
+    <title>ext</title>
+</head>
+<body>
+
+</body>
+</html>

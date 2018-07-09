@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="fpgrowth">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="fpgrowth.jar">
+      <element id="module-output" name="数据挖掘算法" />
+    </root>
+  </artifact>
+</component>
