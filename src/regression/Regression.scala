@@ -126,6 +126,7 @@ class Regression extends Serializable {
   def getModel(data:RDD[ArrayBuffer[String]]): ArrayBuffer[String]={
    val spark=SparkConfig.spark
     //原类型和伴生对象都找不到的隐式值，会找手动导入的implicit,为了支持RDD到DataFrame的隐式转换
+    //123
     import spark.implicits._
     //图书类型set
     var typeSet=new mutable.HashSet[String]
